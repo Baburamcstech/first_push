@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        @media only screen and(max-width: 800px) {
+            body {
+                display: block;
+                background: teal;
+            }
+        }
+    </style>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marothan registration</title>
 </head>
+
 <body>
-    
+    <h1>Race Registration</h1>
+    <h2>Participant Details</h2>
+    <form action="babu">
+        <div style="display:inline">
+            <div style="display:inline">
+                <label for="first">First name*:</label>
+
+                <input type="text" value="" placeholder="Enter your first name" required>
+            </div>
+            <div style="display:inline">
+                <label for="last">Last name*:</label>
+                <input type="text" value="" placeholder="Enter your last name" required>
+            </div>
+        </div>
+
+        <p>
+        <h3>Select a race!</h3>
+        </p>
+        <div><input type="radio" name="race" value="Marathon" id="Marathon">Fun Run </div>
+        <div> <input type="radio" name="race" value="Marathon" id="Marathon">Half marathon </div>
+        <div><input type="radio" name="race" value="Marathon" id="Marathon">Full marathon</div>
+        <div><br></div>
+        <div><label for="contact no.">Phone No. </label><input type="number" value=""
+                placeholder="Enter your contact number" required></div>
+        <div>Email*:<input type="email" value="" id="" required>
+            Password*: <input type="password" value="" id="" required></div>
+        <div><br></div>
+        <div><label for="Age">Select age*:</label><select name="Age" id="age select" required>
+                <option value="">__please select an option__</option>
+                <option value="Age">under 18</option>
+                <option value="Age">18-24</option>
+                <option value="Age">24-28</option>
+                <option value="Age">28-32</option>
+            </select>
+
+
+            <div><label for="Address" id="">Full address: </label>
+                <input type="text" value="" id="Address"><label for="pin code">Pin code* <input type="number"
+                        required></label><label for="state">State</label>
+
+                <input type="text">
+                <div class="inl">
+                    <h4>Upload your photo</h4>
+
+                    <span><button id="id2">Browse Files</button></span>
+
+                    <h4>Participant's Signature</h4>
+
+                    <div id="id1" class="sign">
+                        <span> <button>clear</button></span>
+
+                    </div>
+                </div>
+                <div> <br></div>
+                <div><button>submit</button></div>
+                <!--We can also use <button>submit</button>-->
+    </form>
+
+
 </body>
+
 </html>
